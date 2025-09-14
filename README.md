@@ -210,3 +210,9 @@ git push origin feature-name
 The maintainers will review your PR. Once approved, it will be merged into the main repository.
 
 ---
+
+## Developers 👨‍💻👩‍💻
+
+- [@Gaurav Katiyar](https://www.linkedin.com/in/gaurav-katiyar-6a9263333/)
+
+---
