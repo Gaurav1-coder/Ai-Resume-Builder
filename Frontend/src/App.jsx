@@ -1,13 +1,15 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import Header from "./components/custom/Header";
 import { Toaster } from "./components/ui/sonner";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { addUserData } from "./features/user/userFeatures";
 import { startUser } from "./Services/login";
 import { resumeStore } from "./store/store";
 import { Provider } from "react-redux";
+
+// 👇 NEW IMPORT
+import AtsChecker from "./components/custom/AtsChecker";
 
 function App() {
   const navigate = useNavigate();
@@ -18,7 +20,7 @@ function App() {
     const fetchResponse = async () => {
       try {
         const response = await startUser();
-        if (response.statusCode == 200) {
+        if (response.statusCode === 200) {
           dispatch(addUserData(response.data));
         } else {
           dispatch(addUserData(""));
@@ -40,6 +42,10 @@ function App() {
       <Provider store={resumeStore}>
         <Header user={user} />
         <Outlet />
+
+        {/* 👇 Add ATS Score Checker below all main pages */}
+        <AtsChecker />
+
         <Toaster />
       </Provider>
     </>
@@ -47,3 +53,4 @@ function App() {
 }
 
 export default App;
+
