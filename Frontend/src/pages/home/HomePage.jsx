@@ -15,7 +15,6 @@ function HomePage() {
   const handleClick = () => {
     window.open(
       "https://github.com/Gaurav1-coder/Ai-Resume-Builder",
-      "https://www.instagram.com/choudhary_gaurav2",
       "_blank"
     );
   };
@@ -136,11 +135,6 @@ function HomePage() {
             <Button variant="secondary" onClick={handleClick}>
               <FaGithub className="w-4 h-4 mr-1" />
               GitHub
-            </Button>
-
-            <Button variant="secondary" onClick={(hadnleGetStartedClick)}>
-              <FaInstagram className="w-4 h-4 mr-1 text-pink-500" />
-              @choudhary_gaurav2
             </Button>
           </div>
         </div>
