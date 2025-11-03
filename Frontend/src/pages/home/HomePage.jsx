@@ -136,6 +136,14 @@ function HomePage() {
               <FaGithub className="w-4 h-4 mr-1" />
               GitHub
             </Button>
+
+            <Button variant="secondary" onClick={() =>
+              window.open("https://www.instagram.com/gaurav_katiyar_07", "_blank")
+            }
+            >
+            <FaInstagram className="w-4 h-4 mr-1 text-pink-500" />
+            @gaurav_katiyar_07
+            </Button>
           </div>
         </div>
       </footer>

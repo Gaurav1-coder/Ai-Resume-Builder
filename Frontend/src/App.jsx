@@ -39,8 +39,6 @@ function App() {
       <Provider store={resumeStore}>
         <Header user={user} />
         <Outlet />
-        <AtsChecker />
-
         <Toaster />
       </Provider>
     </>
