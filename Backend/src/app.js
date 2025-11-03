@@ -2,7 +2,6 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import userRouter from "./routes/user.routes.js";
 import resumeRouter from "./routes/resume.routes.js";
-import atsRouter from "./routes/ats.routes.js";
 import cors from "cors";
 import { config } from "dotenv";
 config();
@@ -22,6 +21,5 @@ app.use(cors(corsOptions));
 
 app.use("/api/users", userRouter);
 app.use("/api/resumes", resumeRouter);
-app.use("/api/ats", atsRouter);
 
 export default app;
