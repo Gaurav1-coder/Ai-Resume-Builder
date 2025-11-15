@@ -129,7 +129,7 @@ function HomePage() {
       <footer className="bg-white" aria-labelledby="footer-heading">
         <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 p-5 flex justify-between">
           <p className="text-xs leading-5 text-gray-500">
-            &copy; 2024 Ai-Resume-Builder. All rights reserved.
+            &copy; 2025 Ai-Resume-Builder. All rights reserved.
           </p>
           <div>
             <Button variant="secondary" onClick={handleClick}>
